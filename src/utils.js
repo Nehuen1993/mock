@@ -10,6 +10,7 @@ export const generateMock = () => {
     };
 };
 
+
 export const generateMockList = (count) => {
     const mockList = [];
 

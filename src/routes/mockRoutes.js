@@ -5,7 +5,7 @@ const router = Router()
 
 router.get ('/', (req, res) => {
     let mock = []
-    for (let i = 0; i < 100 ; i++) {
+    for (let i = 0; i < 5 ; i++) {
         mock.push(generateMock())
     }
     res.send({status: "success", payload: mock})
