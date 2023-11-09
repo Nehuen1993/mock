@@ -1,0 +1,15 @@
+import { Router } from "express"
+import { generateMock } from '../utils.js'
+
+const router = Router()
+
+router.get ('/', (req, res) => {
+    let mock = []
+    for (let i = 0; i < 100 ; i++) {
+        mock.push(generateMock())
+    }
+    res.send({status: "success", payload: mock})
+
+})
+
+export default router
